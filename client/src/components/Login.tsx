@@ -29,8 +29,8 @@ function Login() {
     <Container>
       {isMember ? (
         <>
-          <Input>ID</Input>
-          <Input>Password</Input>
+          <Input>Email</Input>
+          <Input password={true}>Password</Input>
           <Button>로그인</Button>
           <SocialLogin />
           <span>
@@ -40,10 +40,10 @@ function Login() {
       ) : (
         <>
           <Profile />
-          <Input>ID</Input>
+          <Input>Email</Input>
           <Input>Nickname</Input>
-          <Input>Password</Input>
-          <Input>Retype</Input>
+          <Input password={true}>Password</Input>
+          <Input password={true}>Retype</Input>
           <Button>회원가입</Button>
           <span>
             이미 회원이신가요?<span onClick={handleClick}>로그인</span>

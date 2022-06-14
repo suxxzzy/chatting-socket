@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "lib": ["dom", "es5", "es6"],
+    "types": ["node"],
+    "target": "es5",
     "module": "commonjs",
-    "strict": true,
     "moduleResolution": "node",
     "outDir": "./build",
-    "sourceMap": false,
-    "esModuleInterop": true
-  },
-  "exclude": ["node_modules"],
-  "include": ["./**/*.ts"]
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true
+  }
 }

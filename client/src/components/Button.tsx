@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Btn = styled.button`
   border: none;
   width: 400px;
-  height: 30px;
+  height: 40px;
   margin: 20px 0px;
   &:hover {
     background-color: gray;

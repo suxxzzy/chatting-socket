@@ -12,6 +12,9 @@ const Container = styled.section`
     font-weight: bold;
   }
   > input {
+    width: 300px;
+    height: 30px;
+    font-size: 1.3rem;
     border: none;
     &:focus {
       outline: none;
@@ -21,14 +24,15 @@ const Container = styled.section`
 
 type Props = {
   children: string;
+  password?: boolean;
 };
 
 //입력할 내용에 따라서, 라벨 이름, 유효성 검사 항목이 달라짐
-function Input({ children }: Props) {
+function Input({ children, password }: Props) {
   return (
     <Container>
       <div>{children}</div>
-      <input type="text"></input>
+      <input type={password ? "password" : "text"}></input>
     </Container>
   );
 }
