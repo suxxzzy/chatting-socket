@@ -6,10 +6,12 @@ import Button from "./Button";
 import SocialLogin from "./SocialLogin";
 
 const Container = styled.section`
+  /* border: 1px solid black; */
   flex: 3;
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   > span {
     font-size: 0.9rem;

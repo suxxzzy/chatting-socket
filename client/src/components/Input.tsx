@@ -7,9 +7,10 @@ const Container = styled.section`
   width: 400px;
   height: 40px;
   border-bottom: 1px solid #bdbdbd;
+  margin-bottom: 10px;
 
   > div {
-    font-weight: bold;
+    /* font-weight: bold; */
   }
   > input {
     width: 300px;
